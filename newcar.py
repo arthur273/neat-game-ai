@@ -200,6 +200,8 @@ def run_simulation(genomes, config):
             else:
                 car.speed += 2 # Speed Up
         
+
+        
         # Check If Car Is Still Alive
         # Increase Fitness If Yes And Break Loop If Not
         still_alive = 0
@@ -239,7 +241,7 @@ def run_simulation(genomes, config):
 if __name__ == "__main__":
     
     # Load Config
-    config_path = "./config.txt"
+    config_path = "./config_og.txt"
     config = neat.config.Config(neat.DefaultGenome,
                                 neat.DefaultReproduction,
                                 neat.DefaultSpeciesSet,
